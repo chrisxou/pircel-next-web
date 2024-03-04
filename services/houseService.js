@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const BASE_URL_PRIMARY = process.env.NEXT_PUBLIC_NODE_SERVER || "https://pircel-node.onrender.com";
-const BASE_URL_FALLBACK = process.env.NEXT_PUBLIC_PIRCEL_SERVER || "https://wizard-world-api.herokuapp.com";
+const BASE_URL_PRIMARY = process.env.NEXT_PUBLIC_NODE_SERVER;
+const BASE_URL_FALLBACK = process.env.NEXT_PUBLIC_PIRCEL_SERVER;
 
 export const getHouses = async (name) => {
   try {
