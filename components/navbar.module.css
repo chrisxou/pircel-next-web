@@ -1,24 +1,23 @@
 .navbar {
   height: 60px;
-  background-color: #7F0909; /* Dark red color */
+  background-color: #7F0909; 
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
   color: white;
-  padding: 0 20px; /* Add padding to the left and right */
+  padding: 0 20px;
 }
 
 .link {
-  color: white; /* Change the color */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Make it bold */
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
 }
 
 .link:hover {
-  color: #FFC500; /* Change color on hover */
+  color: #FFC500; 
 }
-
 .houseIcon {
   height:50px;
   width:50px;

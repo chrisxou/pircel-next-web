@@ -57,20 +57,29 @@ const Houses = () => {
           const color2 = houseColors[1];
 
           return (
-            
             <div key={house.id} className={styles.card}>
-            <div className={styles.intro}>
-              <h1>{house.name}</h1>
-              <p>{house.animal}</p> </div>
-              <div className={styles.house} style={{ background: `linear-gradient(to right, ${color1}, ${color2})`}}></div>
+              <div className={styles.intro}>
+                <h1>{house.name}</h1>
+                <p>{house.animal}</p>{" "}
+              </div>
+              <div
+                className={styles.house}
+                style={{
+                  background: `linear-gradient(to right, ${color1}, ${color2})`,
+                }}
+              ></div>
 
-              <p>Founder: <b>{house.founder}</b></p>
+              <p>
+                Founder: <b>{house.founder}</b>
+              </p>
             </div>
           );
         })}
 
         {error && (
-          <div style={{color:"red"}} className={styles["body-container"]}>Error: {error.message}</div>
+          <div style={{ color: "red" }} className={styles["body-container"]}>
+            Error: {error.message}
+          </div>
         )}
       </div>
     </>
